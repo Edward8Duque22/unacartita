@@ -9,7 +9,7 @@
 <body>
 	<style type="text/css">
 		#texto {
-		  font-family: Century Gothic;
+		  font-family: Century Gothic, sans-serif;
 		  font-size: 16px;
 		  padding: 0px;
 		  border: 5px solid;
@@ -87,7 +87,7 @@
 		}
 		escribirTexto();*/
 		
-		let index = 0;
+		let index = 1;
 		function escribirTexto() {
 		  const divTexto = document.getElementById('texto');
 		  const fondoNegro = document.querySelector('.fondo');
@@ -97,7 +97,7 @@
 
 		  if(index < texto.length){
 		    setTimeout(escribirTexto, 
-		    	/*50*/
+		    	50
 		    	);
 		  } else {
 		    // Texto completo, leer en voz alta
